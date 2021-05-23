@@ -1,6 +1,25 @@
 @import './reset';
 
+:root {
+	--dark-blue: hsl(240, 38%, 20%);
+	--grayish-blue: hsl(240, 18%, 77%);
+}
+
 body {
 	font-size: 32px;
 	font-family: 'Inter', sans-serif;
+	color: var(--dark-blue);
+}
+
+figure.testimonial {
+	width: 100vw;
+	height: 100vh;
+	background-color: burlywood;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	img {
+		width: 80%;
+	}
 }
