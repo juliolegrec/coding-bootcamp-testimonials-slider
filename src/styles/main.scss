@@ -1,8 +1,3 @@
-:root {
-	--clr-dark-blue: hsl(240, 38%, 20%);
-	--clr-grayish-blue: hsl(240, 18%, 77%);
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -11,77 +6,24 @@
 
 body {
 	font-family: 'Inter', sans-serif;
-	color: var(--clr-dark-blue);
-}
-
-img {
-	width: 100%;
+	font-size: 16px;
 }
 
 .testimonial-slider {
-	background-image: url(../images/pattern-curve.svg);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-	background-size: 70% 10%;
 	height: 100vh;
-	padding-top: 15px;
-	display: flex;
-	flex-direction: column;
-}
+	background-color: lemonchiffon;
 
-section.avatar {
-	height: 50%;
-	background-image: url(../images/pattern-bg.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 90%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-
-	img {
-		display: block;
-		width: 70vw;
-		object-fit: contain;
-		border-radius: 8px;
+	.profile-pic,
+	.quote {
+		height: 50%;
+		width: 100%;
 	}
 
-	nav.slider-nav {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		position: absolute;
-		background: white;
-		border-radius: 24px;
-
-		img {
-			width: 100%;
-		}
-	}
-}
-
-section.quote {
-	height: 50%;
-	padding: 20px;
-	text-align: center;
-	background-image: url(../images/pattern-quotes.svg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 4rem;
-
-	p.testimony {
-		font-size: 1.25rem;
-		font-weight: 300;
-		line-height: 1.5;
-		margin-bottom: 10px;
+	.profile-pic {
+		background-color: lightblue;
 	}
 
-	p.testimonial-name {
-		font-weight: 700;
-	}
-
-	p.testimonial-position {
-		font-weight: 500;
-		color: var(--clr-grayish-blue);
+	.quote {
+		background-color: lightgreen;
 	}
 }
