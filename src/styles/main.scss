@@ -1,41 +1,78 @@
+:root {
+  --clr-dark-blue: hsl(240, 38%, 20%);
+  --clr-grayish-blue: hsl(240, 18%, 77%);
+}
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Inter', sans-serif;
-	font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: var(--clr-dark-blue);
 }
 
 .testimonial-slider {
-	height: 100vh;
-	// background-color: lemonchiffon;
+  height: 100vh;
+  width: 100%;
+  // background-color: lemonchiffon;
+  padding: 20px;
+  background: url(../images/pattern-curve.svg) no-repeat bottom left;
+  background-size: 70% 10%;
 
-	.profile-pic,
-	.quote {
-		height: 50%;
-		width: 100%;
-	}
+  .profile-pic,
+  .quote {
+    height: 50%;
+    width: 100%;
+  }
 
-	.profile-pic {
-		// background-color: lightblue;
-		background-image: url(../images/pattern-bg.svg);
-		background-size: 85%;
-		background-repeat: no-repeat;
-		background-position: center;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+  .profile-pic {
+    // background-color: lightblue;
+    background: url(../images/pattern-bg.svg) no-repeat center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-		img {
-			width: 65%;
-			border-radius: 8px;
-		}
-	}
+    img {
+      max-width: 85%;
+      max-height: 85%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
 
-	.quote {
-		background-color: lightgreen;
-	}
+  .quote {
+    background: url(../images/pattern-quotes.svg) no-repeat center top;
+    background-size: 20%;
+    margin-top: 25px;
+    padding: 20px 0;
+
+    p {
+      text-align: center;
+
+      &.quote-text {
+        font-weight: 300;
+        // font-size: 1.15rem;
+        line-height: 1.5;
+      }
+
+      &.quote-name,
+      &.quote-position {
+        font-size: 0.875rem;
+      }
+
+      &.quote-name {
+        font-weight: 700;
+        margin-top: 10px;
+      }
+
+      &.quote-position {
+        color: var(--clr-grayish-blue);
+      }
+    }
+  }
 }
