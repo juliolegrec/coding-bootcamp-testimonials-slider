@@ -11,7 +11,7 @@ body {
 
 .testimonial-slider {
 	height: 100vh;
-	background-color: lemonchiffon;
+	// background-color: lemonchiffon;
 
 	.profile-pic,
 	.quote {
@@ -20,7 +20,19 @@ body {
 	}
 
 	.profile-pic {
-		background-color: lightblue;
+		// background-color: lightblue;
+		background-image: url(../images/pattern-bg.svg);
+		background-size: 85%;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 65%;
+			border-radius: 8px;
+		}
 	}
 
 	.quote {
